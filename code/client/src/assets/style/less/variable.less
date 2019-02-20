@@ -1,0 +1,112 @@
+// 变量文件
+@border-base: #e8e8e8;
+@bright-white: #f2f1f6;
+@jet: #333;
+@dark-dark-grey: #666;
+@dark-grey: #999;
+@bg-gray-f2: #f2f2f2;
+@bg-gray-f7: #f7f7f7;
+@skype: #4bbffa;
+@gray: #ccc;
+@default: #f6f6f6;
+@blue:  #318bf5;
+@disqus: #4da4f2;
+@white: #fff;
+@black: #000;
+@complete-color: #49a5f6;
+@red-color: #FF635D;
+@orange-color: #fe8532;
+@orange-bg: #fefced;
+@depred-color: #d34532;
+@ghost-white: #f4f3f8;
+@light-gray: #b9b9b9;
+@text-color: #656565;
+@text2-color: #757575;
+@num-color: #4cd98a;
+@green-color: #40be7e;
+@inp-color: #d9d9d9;
+@texarea-bg: #f5f5f5;
+@middle-gray: #ececec;
+@stateBar: #61b1f7;
+@placeholder: #d9d9d9;
+@tip-color: #aaa;
+@search-text: #aaaaaa;
+@text-blue: #318bf5;
+@text-purple: #8755e0;
+@required-color: #fc4b4c;
+@dark-blue: #1e9acd;
+@light-blue: #279cf7;
+@bg-gray-e3: #e3e3e3;
+@split-line-color: #cbcfd6;
+@bg-gray-f9: #f9fafc;
+@border-color-co: #c0ccda;
+@border-color-EA: #EAEAEA;
+@font-11: 11px;
+@font-12: 12px;
+@font-13: 12px;
+@font-14: 14px;
+@font-15: 15px;
+@font-16: 16px;
+@font-17: 17px;
+@font-18: 18px;
+@font-20: 20px;
+@font-24: 24px;
+
+// 项目管理变量
+@primary: #318bf5;
+@primary-foil: rgba(49, 139, 245, .1);
+@defective: #8755e0;
+@defective-foil: rgba(135, 85, 224, .1);
+@undone: #fcb23c;
+@undone-foil: rgba(252, 178, 60, .1);
+@bad: #ff635d;
+@bad-foil: rgba(255, 99, 93, .1);
+@good: #4cd98a;
+@good-foil: rgba(76, 217, 138, .1);
+@title-text: #333;
+@content-text: #666;
+@light-text: #fff;
+@failure: #ccc;
+
+.make-col(@percent) {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 @percent;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 @percent;
+    -ms-flex: 0 0 @percent;
+    flex: 0 0 @percent;
+    max-width: @percent;
+}
+
+.extend-click (@percent:-5px) {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: @percent;
+        left: @percent;
+        right: @percent;
+        bottom: @percent;
+    }
+}
+
+.deep-color {
+    textarea::-webkit-input-placeholder {
+        color: @text-color;
+    }
+    textarea::-moz-placeholder {
+        color: @text-color;
+    }
+    textarea::-moz-placeholder {
+        color: @text-color;
+    }
+    input::-webkit-input-placeholder {
+        color: @text-color;
+    }
+    input::-moz-placeholder {
+        color: @text-color;
+    }
+    input::-moz-placeholder {
+        color: @text-color;
+    }
+}
